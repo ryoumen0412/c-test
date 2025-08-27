@@ -4,16 +4,19 @@ pub fn format_date(date: &NaiveDate) -> String {
     date.format("%d/%m/%Y").to_string()
 }
 
+#[allow(dead_code)]
 pub fn parse_date(date_str: &str) -> Option<NaiveDate> {
     NaiveDate::parse_from_str(date_str, "%d/%m/%Y").ok()
         .or_else(|| NaiveDate::parse_from_str(date_str, "%Y-%m-%d").ok())
 }
 
+#[allow(dead_code)]
 pub fn validate_rut(rut: &str) -> bool {
     let re = regex::Regex::new(r"^[0-9]{7,8}-[0-9Kk]$").unwrap();
     re.is_match(rut)
 }
 
+#[allow(dead_code)]
 pub fn validate_email(email: &str) -> bool {
     let re = regex::Regex::new(r"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$").unwrap();
     re.is_match(email)

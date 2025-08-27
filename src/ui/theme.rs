@@ -6,12 +6,14 @@ impl AppleMusicStyle {
     // Colores principales - inspirados en Apple Music pero en azul
     pub const PRIMARY_BLUE: egui::Color32 = egui::Color32::from_rgb(0, 122, 255);        // Azul principal de Apple
     pub const SECONDARY_BLUE: egui::Color32 = egui::Color32::from_rgb(30, 144, 255);     // Azul más claro
+    #[allow(dead_code)]
     pub const DARK_BLUE: egui::Color32 = egui::Color32::from_rgb(0, 100, 210);           // Azul oscuro
     pub const BACKGROUND_DARK: egui::Color32 = egui::Color32::from_rgb(25, 25, 28);      // Fondo oscuro
     pub const BACKGROUND_LIGHT: egui::Color32 = egui::Color32::from_rgb(40, 40, 45);     // Fondo claro
     pub const SIDEBAR_BG: egui::Color32 = egui::Color32::from_rgb(30, 30, 35);           // Fondo sidebar
     pub const TEXT_PRIMARY: egui::Color32 = egui::Color32::WHITE;                        // Texto principal
     pub const TEXT_SECONDARY: egui::Color32 = egui::Color32::from_rgb(160, 160, 160);    // Texto secundario
+    #[allow(dead_code)]
     pub const ACCENT_BLUE: egui::Color32 = egui::Color32::from_rgb(10, 132, 255);        // Azul de acento
     pub const HOVER_BLUE: egui::Color32 = egui::Color32::from_rgb(20, 140, 255);         // Azul hover
     pub const CARD_BG: egui::Color32 = egui::Color32::from_rgb(35, 35, 40);              // Fondo de tarjetas
@@ -51,6 +53,7 @@ impl AppleMusicStyle {
     }
 
     // Estilo para botón principal (estilo Apple Music)
+    #[allow(dead_code)]
     pub fn primary_button() -> egui::Button<'static> {
         egui::Button::new("Button")
             .fill(Self::PRIMARY_BLUE)
@@ -60,6 +63,7 @@ impl AppleMusicStyle {
     }
 
     // Estilo para botón secundario
+    #[allow(dead_code)]
     pub fn secondary_button() -> egui::Button<'static> {
         egui::Button::new("Button")
             .fill(Self::CARD_BG)

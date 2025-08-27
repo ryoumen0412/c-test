@@ -69,6 +69,7 @@ pub fn show_error_dialog(ui: &mut egui::Ui, message: &str) {
         });
 }
 
+#[allow(dead_code)]
 pub fn show_success_dialog(ui: &mut egui::Ui, message: &str) {
     egui::Frame::popup(ui.style())
         .fill(egui::Color32::from_rgb(20, 60, 20))
